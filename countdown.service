@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=$USER
 WorkingDirectory=/$PATH/countdown
-ExecStart=/$PYTHON_PATH/python app.py --port $PORT --countdown-file $FILE
+ExecStart=/$PYTHON_PATH/python app.py --port $PORT --file $FILE
 Restart=always
 
 [Install]
